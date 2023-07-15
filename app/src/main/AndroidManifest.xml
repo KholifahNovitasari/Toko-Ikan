@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
     <application
         android:name=".application.FishApp"
         android:allowBackup="true"
@@ -13,6 +21,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TokoIkanApp"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC7Lq64M1qK2y1Es-RSn7hkupBZe0CvrRQ"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

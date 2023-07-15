@@ -12,5 +12,7 @@ data class Fish (
     val id: Int = 0,
             val name: String,
             val address: String,
-            val number: String
+            val number: String,
+            val latitude: Double?,
+            val longitude: Double?
 ) : Parcelable
